@@ -1,0 +1,252 @@
+/*global*/
+.py-100{
+padding: 100px 0;
+}
+.sec-title::before{
+    content:" ";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    width:7%;
+    height:2px;
+    background-color: #ccc;
+}
+.sec-title h1{
+    font-size: 48px;
+}
+.sec-title span{
+    letter-spacing: 3px;
+    font-size: 14px;
+    display: block;
+    margin:25px 0;
+}
+.inner{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color:#d62456d5;
+    transform: scaleX(0);
+    transition: .4s ease-in-out;
+}
+.inner span{
+    font-size:23px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:white;
+}
+.image:hover .inner{
+    transform:scaleX(1);
+}
+/*start header*/
+
+header{
+    height:100vh;
+    background-image: url(../Media/banner_images.webp);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+nav .burger-button .lines{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: .4s;
+}
+nav{
+    transition: .4s ease-in-out;
+}
+nav.scroll{
+    background-color:#20232c;
+    box-shadow: rgba(0,0,0,.117647) 0 1px 3px;
+}
+.logo ,.burger-button{
+    z-index:11111111;
+    cursor: pointer;
+}
+nav .burger-button.rotate .lines:first-child{
+    transform:rotate(45deg)translateY(6px);
+    background-color: #fa225b;
+}
+nav .burger-button.rotate .lines:nth-child(2){
+    display: none !important;
+}
+nav .burger-button.rotate .lines:nth-child(3){
+    transform:rotate(-45deg) translateY(-6px);
+    background-color: #fa225b;
+}
+.hero{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.hero h4{
+    letter-spacing: 3px;
+}
+.hero h1{
+    font-size: 135px;
+    color:#fa225b;
+}
+.hero span{
+    letter-spacing: 5px;
+}
+/*navigation*/
+.navigation{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #20232c;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease-in-out;
+    z-index:111;
+}
+.navigation.open{
+    opacity: 1;
+    visibility: visible;
+}
+.navigation ul li{
+    list-style: none;
+    text-align: center;
+}
+.navigation li a{
+    color:white;
+    font-size: 45px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 30px;
+    letter-spacing: 2xp;
+    transition: .4s ease-in-out;
+}
+.navigation li a.active,
+.navigation li a:hover{
+    color:#fa225b;
+}
+
+/*about*/
+.about{
+    background-color: #20232c;
+    color: white;
+}
+/*why work*/
+.why-work{
+    background-color:#191c23;
+    color: white;
+}
+.why-work .circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;  
+}
+.fa{
+    position: absolute;
+    color:#7a89ab;
+    font-size:75px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+/*start recent work*/
+
+.recent-work{
+    background-color:#96c577;
+    color: white;
+    padding-top: 100px;
+}
+
+.recent-work button{
+    background-color: #fa225b;
+    color: white;
+    font-size:18px;
+    letter-spacing: 4px;
+    transition: .4s ease-in-out;
+}
+.recent-work button:hover{
+    background-color: white;
+    color:#fa225b
+}
+/*start quote*/
+.quote{
+    background-image: url(../Media/back-2.jpeg);
+    background-size: cover;
+    background-position:center;
+    color: white;
+}
+.carousel-indicators li{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 1px solid;
+}
+.carousel-indicators li.active{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 1px solid;
+}
+.carousel-item{
+    transition-delay:.4s;
+}
+.brands span{
+    font-size: 25px;
+    letter-spacing:3px;
+}
+.swiper-container{
+    cursor:grab;
+}
+/*start expert*/
+.expert{
+    background-color:#49629b;
+    color: white;
+    padding-top: 100px;
+    padding-top: 100px;
+}
+.expert .card{
+    background-color: #20232c;
+    padding-bottom: 50px;
+}
+.expert .card h5{
+    color: #fa225b;
+    font-size: 28px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.expert .card h5:hover{
+    color:white;
+}
+/*start contact*/
+
+.form input{
+    font-size: 12px;
+}
+.form input:focus,
+.form button:focus{
+    outline: none !important;
+    border:none !important;
+    box-shadow: none !important;
+}
+.form button{
+    background-color: #fa225b;
+    color: white;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: .4s ease-in-out;
+    border-color: transparent;
+}
+.form button:hover{
+    background-color: white;
+    color: #fa225b;
+    border-color: transparent;
+}
